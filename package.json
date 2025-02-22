@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://bemfes.github.io/",
+  "homepage": "https://bemfes.github.io/Innovation",
   "dependencies": {
     "array-union": "^2.1.0",
     "async": "^3.2.6",
