@@ -864,6 +864,9 @@ a[href^="tel"] {
     text-align: center;
     font-size: 1.4rem !important;
   }
+  .wave-header {
+    display: none;
+  }
 }
 @media (max-width: 360px) {
   .nav__item-link_second {
