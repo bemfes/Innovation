@@ -60,6 +60,7 @@
         <header class="header">
             <div class="header__intersection"></div>
             <picture>
+                <source srcset="images/Clip path group.avif" type="image/avif" alt="" class="wave-header">
                 <source srcset="images/Clip path group.webp" type="image/webp" alt="" class="wave-header">
                 <img fetchpriority="high" src="images/Clip path group.png" alt="" class="wave-header">
             </picture>
@@ -129,10 +130,12 @@
         <div class="transition section-hidden first-sec__transition">
             <div class="first-sec__top container">
                 <picture>
+                    <source class="first-sec__img first-sec__img-light" type="image/avif" srcset="images/Light.avif" alt="">
                     <source class="first-sec__img first-sec__img-light" type="image/webp" srcset="images/Light.webp" alt="">
                     <img fetchpriority="high" class="first-sec__img first-sec__img-light" src="images/Light.png" alt="">
                 </picture>
                 <picture>
+                    <source class="first-sec__img first-sec__img-man" type="image/avif" srcset="images/man.avif" alt="man">
                     <source class="first-sec__img first-sec__img-man" type="image/webp" srcset="images/man.webp" alt="man">
                     <img fetchpriority="high" class="first-sec__img first-sec__img-man" src="images/man.png" alt="man">
                 </picture>
@@ -164,7 +167,7 @@
                     <div class="video-box video-box_first">
                         <picture>
                             <source class="video__poster" type="image/webp" srcset="images/Video.webp" alt="">
-                            <img class="video__poster" src="images/Video.png" alt="">
+                            <img fetchpriority="high" class="video__poster" src="images/Video.png" alt="">
                         </picture>
                         <button tabindex="0" class="video__play vid-play"></button>
                     </div>
