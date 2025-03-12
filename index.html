@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" media="print" onload="this.media='all'; this.onload=null" href="css/simplebar.min.css" />
     <link rel="stylesheet" media="print" onload="this.media='all'; this.onload=null" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <script defer src="js/just-validate.min.js"></script>
     <script defer src="js/simplebar.min.js"></script>
     <script defer src="js/swiper-bundle.min.js"></script>
@@ -61,7 +61,7 @@
             <div class="header__intersection"></div>
             <picture>
                 <source srcset="images/Clip path group.webp" type="image/webp" alt="" class="wave-header">
-                <img src="images/Clip path group.png" alt="" class="wave-header">
+                <img fetchpriority="high" src="images/Clip path group.png" alt="" class="wave-header">
             </picture>
            
             <div class="header__sticky">
@@ -130,11 +130,11 @@
             <div class="first-sec__top container">
                 <picture>
                     <source class="first-sec__img first-sec__img-light" type="image/webp" srcset="images/Light.webp" alt="">
-                    <img class="first-sec__img first-sec__img-light" src="images/Light.png" alt="">
+                    <img fetchpriority="high" class="first-sec__img first-sec__img-light" src="images/Light.png" alt="">
                 </picture>
                 <picture>
                     <source class="first-sec__img first-sec__img-man" type="image/webp" srcset="images/man.webp" alt="man">
-                    <img class="first-sec__img first-sec__img-man" src="images/man.png" alt="man">
+                    <img fetchpriority="high" class="first-sec__img first-sec__img-man" src="images/man.png" alt="man">
                 </picture>
                 <div class="first-sec__top-main">
                     <h1 tabindex="0" class="title-1 first-sec__title">Immerse Yourself <br> in Virtual Reality</h1>
