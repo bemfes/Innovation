@@ -270,8 +270,8 @@ if (opening) {
     opening.classList.remove('section-hidden')
     setTimeout(() => {
       sectionAfterOp.classList.remove('section-hidden')
-    }, 400)
-  }, 200)
+    }, 300)
+  }, 50)
 })
 }
 
@@ -283,7 +283,7 @@ if (blogPageSection) {
   
   setTimeout(() => {
     blogPageSection.classList.remove('section-hidden')
-  }, 200)
+  }, 50)
 })
 }
 
