@@ -658,10 +658,12 @@ questions.forEach(quest => {
       neighbor.style.maxHeight = null
       e.target.classList.remove('question-opened')
       e.target.setAttribute('aria-expanded', 'false')
+      neighbor.removeAttribute('tabindex', '0')
     } else {
       neighbor.style.maxHeight = neighbor.scrollHeight + "px";
       e.target.classList.add('question-opened')
       e.target.setAttribute('aria-expanded', 'true')
+      neighbor.setAttribute('tabindex', '0')
     }
   })
   quest.addEventListener('keydown', (e) => {
@@ -671,10 +673,12 @@ questions.forEach(quest => {
         neighbor.style.maxHeight = null
         e.target.classList.remove('question-opened')
         e.target.setAttribute('aria-expanded', 'false')
+        neighbor.removeAttribute('tabindex', '0')
       } else {
         neighbor.style.maxHeight = neighbor.scrollHeight + "px";
         e.target.classList.add('question-opened')
         e.target.setAttribute('aria-expanded', 'true')
+        neighbor.setAttribute('tabindex', '0')
       }
 
     }
@@ -686,15 +690,17 @@ questions.forEach(quest => {
 const faq = document.querySelectorAll('.faq__item')
 
 faq.forEach(quest => {
+  const desc = quest.querySelector('.faq__desc')
+  const title = quest.querySelector('.faq__title')
+  const descText = quest.querySelector('.faq__text')
   quest.addEventListener('click', (e) => {
-    const desc = e.target.children[1]
-    const title = e.target.children[0]
     if (desc.style.maxHeight) {
       desc.style.maxHeight = null
       desc.classList.remove('desc-opened')
       title.classList.remove('title-opened')
       e.target.classList.remove('faq-opened')
       e.target.setAttribute('aria-expanded', 'false')
+      descText.removeAttribute('tabindex', '0')
     } else {
       desc.style.maxHeight = desc.scrollHeight + 12 + "px";
       console.log(desc.style.maxHeight);
@@ -702,19 +708,19 @@ faq.forEach(quest => {
       title.classList.add('title-opened')
       e.target.classList.add('faq-opened')
       e.target.setAttribute('aria-expanded', 'true')
+      descText.setAttribute('tabindex', '0')
 
     }
   })
   quest.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
-      const title = e.target.children[0]
-      const desc = e.target.children[1]
       if (desc.style.maxHeight) {
         desc.style.maxHeight = null
         desc.classList.remove('desc-opened')
         title.classList.remove('title-opened')
         e.target.classList.remove('faq-opened')
         e.target.setAttribute('aria-expanded', 'false')
+        descText.removeAttribute('tabindex', '0')
       } else {
         desc.style.maxHeight = desc.scrollHeight + 12 + "px";
         console.log(desc.style.maxHeight);
@@ -722,7 +728,7 @@ faq.forEach(quest => {
         title.classList.add('title-opened')
         e.target.classList.add('faq-opened')
         e.target.setAttribute('aria-expanded', 'true')
-  
+        descText.setAttribute('tabindex', '0')
       }
 
     }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -156,15 +156,15 @@
                         <div class="clients__pics">
                             <picture tabindex="0">
                                 <source class="clients__img clients__img-1" type="image/webp" srcset="images/client-1.webp" alt="">
-                                <img fetchpriority="high" class="clients__img clients__img-1" src="images/client-1.png" alt="">
+                                <img fetchpriority="high" class="clients__img clients__img-1" src="images/client-1.png" alt="client">
                             </picture>
                             <picture tabindex="0">
                                 <source class="clients__img clients__img-2" type="image/webp" srcset="images/client-2.webp" alt="">
-                                <img fetchpriority="high" class="clients__img clients__img-2" src="images/client-2.png" alt="">
+                                <img fetchpriority="high" class="clients__img clients__img-2" src="images/client-2.png" alt="client">
                             </picture>
                             <picture tabindex="0">
                                 <source class="clients__img clients__img-3" type="image/webp" srcset="images/client-3.webp" alt="">
-                                <img fetchpriority="high" class="clients__img clients__img-3" src="images/client-3.png" alt="">
+                                <img fetchpriority="high" class="clients__img clients__img-3" src="images/client-3.png" alt="client">
                             </picture>
                         </div>
                         <p tabindex="0" class="clients__text desc-1"> <span class="clients__span span-bold">32+</span> Happy Clients</p>
@@ -174,7 +174,7 @@
                             <source class="video__poster" type="image/webp" srcset="images/Video.webp" alt="">
                             <img fetchpriority="high" class="video__poster" src="images/Video.png" alt="">
                         </picture>
-                        <button tabindex="0" class="video__play vid-play"></button>
+                        <button aria-label="play video" tabindex="0" class="video__play vid-play"></button>
                     </div>
                     <div class="overlay-video overlay-video__hidden"></div>
                     <video class="video video_hidden" controls>
@@ -186,7 +186,7 @@
             <div class="pluses container">
                 <div class="pluses__item">
                     <div class="pluses__img-box">
-                        <img tabindex="0" class="pluses__img" src="icons/expertise.svg" alt="">
+                        <img tabindex="0" class="pluses__img" src="icons/expertise.svg" alt="expertise">
                     </div>
                     <p tabindex="0" class="pluses__title title-7">Expertise</p>
                     <p tabindex="0" class="pluses__desc desc-2">
@@ -195,7 +195,7 @@
                 </div>
                 <div class="pluses__item">
                     <div class="pluses__img-box">
-                        <img tabindex="0" class="pluses__img" src="icons/customization.svg" alt="">
+                        <img tabindex="0" class="pluses__img" src="icons/customization.svg" alt="customization">
                     </div>
                     <p tabindex="0" class="pluses__title title-7">Customization</p>
                     <p tabindex="0" class="pluses__desc desc-2">
@@ -204,7 +204,7 @@
                 </div>
                 <div class="pluses__item">
                     <div class="pluses__img-box">
-                        <img tabindex="0" class="pluses__img" src="icons/service.svg" alt="">
+                        <img tabindex="0" class="pluses__img" src="icons/service.svg" alt="service">
                     </div>
                     <p tabindex="0" class="pluses__title title-7">Service</p>
                     <p tabindex="0" class="pluses__desc desc-2">
@@ -221,13 +221,13 @@
                     <source class="second-sec__img" type="image/webp" srcset="images/man-second.webp" alt="man">
                     <img loading="lazy" class="second-sec__img" src="images/man-second.png" alt="man">
                 </picture>
-                <div tabindex="0" class="video-box video-box_second">
+                <div class="video-box video-box_second">
                     <div class="video-box-relative">
                         <picture>
                             <source class="video__poster" type="image/webp" srcset="images/video-2.webp" alt="">
                             <img loading="lazy" class="video__poster" src="images/video-2.png" alt="">
                         </picture>
-                        <button tabindex="0" class="video__play vid-play"></button>
+                        <button aria-label="play video" tabindex="0" class="video__play vid-play"></button>
                     </div>
                 </div>
                 <!-- <div class="overlay-video overlay-video-2 overlay-video__hidden"></div>
@@ -264,15 +264,15 @@
             <div class="third-sec__bottom">
                 <div class="service__box">
                     <div class="service__item">
-                        <img loading="lazy" tabindex="0" src="icons/software.svg" alt="" class="service__img">
+                        <img loading="lazy" tabindex="0" src="icons/software.svg" alt="software" class="service__img">
                         <p tabindex="0" class="title-7 service__title">VR Development</p>
                         <p tabindex="0" class="service__desc service__desc-on desc-2">From concept to creation, our team of VR developers will bring your vision to life.</p>
-                        <p tabindex="0"></p>
+                        <p aria-hidden="true" tabindex="0"></p>
                         <a href="det-service.html" class="btn btn_learn service__btn">LEARN MORE</a>
-                        <p class="helper__service-link" tabindex="0"></p>
+                        <p aria-hidden="true" class="helper__service-link" tabindex="0"></p>
                     </div>
                     <div class="service__item padding-top-first">
-                        <img loading="lazy" tabindex="0" src="icons/design (1).svg" alt="" class="service__img">
+                        <img loading="lazy" tabindex="0" src="icons/design (1).svg" alt="service" class="service__img">
                         <p tabindex="0" class="title-7 service__title">VR Design</p>
                         <p tabindex="0" class="service__desc service__desc-on desc-2">Our talented VR designers will create immersive and engaging environments that will captivate your audience.</p>
                         <p tabindex="0"></p>
@@ -280,7 +280,7 @@
                         <p class="helper__service-link" tabindex="0"></p>
                     </div>
                     <div class="service__item padding-top-second">
-                        <img loading="lazy" tabindex="0" src="icons/consult.svg" alt="" class="service__img">
+                        <img loading="lazy" tabindex="0" src="icons/consult.svg" alt="consultation" class="service__img">
                         <p tabindex="0" class="title-7 service__title">VR Consulting</p>
                         <p tabindex="0" class="service__desc service__desc-on desc-2">Our VR consultants will work with you to ensure that your VR experience meets your goals and exceeds your expectations.</p>
                         <p tabindex="0"></p>
@@ -288,7 +288,7 @@
                         <p class="helper__service-link" tabindex="0"></p>
                     </div>
                     <div class="service__item align-items-1">
-                        <img loading="lazy" tabindex="0" src="icons/video-console.svg" alt="" class="service__img">
+                        <img loading="lazy" tabindex="0" src="icons/video-console.svg" alt="video console" class="service__img">
                         <p tabindex="0" class="title-7 service__title">VR Games</p>
                         <p tabindex="0" class="service__desc service__desc-on desc-2">We offer a wide selection of VR games that are suitable for players of all ages and skill levels.</p>
                         <p tabindex="0"></p>
@@ -296,7 +296,7 @@
                         <p class="helper__service-link" tabindex="0"></p>
                     </div>
                     <div class="service__item align-items-2">
-                        <img loading="lazy" tabindex="0" src="icons/party.svg" alt="" class="service__img">
+                        <img loading="lazy" tabindex="0" src="icons/party.svg" alt="petard" class="service__img">
                         <p tabindex="0" class="title-7 service__title">VR Events</p>
                         <p tabindex="0" class="service__desc service__desc-on desc-2">Make your next event unforgettable with our VR event services.</p>
                         <p tabindex="0"></p>
@@ -304,7 +304,7 @@
                         <p class="helper__service-link" tabindex="0"></p>
                     </div>
                     <div class="service__item">
-                        <img loading="lazy" tabindex="0" src="icons/theatre.svg" alt="" class="service__img">
+                        <img loading="lazy" tabindex="0" src="icons/theatre.svg" alt="smiling mask and sad mask" class="service__img">
                         <p tabindex="0" class="title-7 service__title">VR Entertainment</p>
                         <p tabindex="0" class="service__desc service__desc-on desc-2">Create a VR escape room, or offer VR experiences at a theme park, we have the expertise and experience to make it happen.</p>
                         <p tabindex="0"></p>
@@ -324,19 +324,19 @@
                     <li aria-expanded="false" tabindex="0" class="questions__item title-8">Passionate and Experienced Team
                         
                     </li>
-                    <li tabindex="0" class="questions__desc desc-3">
+                    <li class="questions__desc desc-3">
                             We are proud of our team of VR experts who are passionate about VR and dedicated to delivering the highest quality work. Our team consists of experienced VR developers, designers, and technicians who have a proven track record of creating immersive and engaging VR experiences.
                     </li>
                     <li aria-expanded="false" tabindex="0" class="questions__item title-8">Customized Solutions
                         
                     </li>
-                    <li tabindex="0" class="questions__desc desc-3">
+                    <li  class="questions__desc desc-3">
                             We are proud of our team of VR experts who are passionate about VR and dedicated to delivering the highest quality work. Our team consists of experienced VR developers, designers, and technicians who have a proven track record of creating immersive and engaging VR experiences.
                     </li>
                     <li aria-expanded="false" tabindex="0" class="questions__item title-8">Exceptional Customer Service
                         
                     </li>
-                    <li tabindex="0" class="questions__desc desc-3">
+                    <li class="questions__desc desc-3">
                             We are proud of our team of VR experts who are passionate about VR and dedicated to delivering the highest quality work. Our team consists of experienced VR developers, designers, and technicians who have a proven track record of creating immersive and engaging VR experiences.
                     </li>
                 </ul>
@@ -353,7 +353,7 @@
                                 <source class="video__poster" type="image/webp" srcset="images/video-3 (1).webp" alt="">
                                 <img loading="lazy" class="video__poster" src="images/video-3 (1).png" alt="">
                             </picture>
-                            <button tabindex="0" class="video__play vid-play"></button>
+                            <button aria-label="play video" tabindex="0" class="video__play vid-play"></button>
                         </div>
                     </div>
                 </div>
@@ -377,13 +377,13 @@
                     <div tabindex="0" class="big-video__text caption-2">VR Service</div>
                     <p tabindex="0" class="big-video__title title-4">How to get started</p>
                 </div>
-                <button class="vid-play big-video__btn"><img loading="lazy" src="icons/play-button.svg" alt="" ></button>
+                <button aria-label="play video" class="vid-play big-video__btn"><img loading="lazy" src="icons/play-button.svg" alt="" ></button>
                 <picture>
                     <source srcset="images/video-4.webp" type="image/webp" alt="" class="big-video__img">
                     <img loading="lazy" src="images/video-4.png" alt="" class="big-video__img">
                 </picture>
                 <div class="big-video__settings">
-                    <button class="vid-play big-video__play"><img loading="lazy" src="icons/play-triangle.svg" alt=""></button>
+                    <button aria-label="play video" class="vid-play big-video__play"><img loading="lazy" src="icons/play-triangle.svg" alt=""></button>
                     <div class="big-video__line"></div>
 
                 </div>
@@ -410,9 +410,9 @@
                
                 <div class="item-review item-review-1 sixth-sec__item">
                     <div class="item-review__relative">
-                        <div  tabindex="0" aria-expanded="true" class="item-review__man item-review__man-clicked">
+                        <div tabindex="0" aria-expanded="true" class="item-review__man item-review__man-clicked">
                             <picture>
-                                <img loading="lazy" tabindex="0" src="images/client-1.png" alt="" class="item-review__img">
+                                <img loading="lazy" tabindex="0" src="images/client-1.png" alt="client" class="item-review__img">
                             </picture>
                            
                         </div>
@@ -426,7 +426,7 @@
                 <div class="item-review item-review-2 sixth-sec__item">
                     <div class="item-review__relative">
                         <div aria-expanded="false" tabindex="0" class="item-review__man">
-                            <img loading="lazy" tabindex="0" src="images/client-2.png" alt="" class="item-review__img">
+                            <img loading="lazy" tabindex="0" src="images/client-2.png" alt="client" class="item-review__img">
                         </div>
                         <div class="item-review__desc item-review__desc-hidden item-review__desc-hidden-inv item-review__desc_inverted">
                             <p tabindex="0" class="item-review__text desc-4 item-review__text_inverted">The team was professional, responsive, and a pleasure to work with. We highly recommend VRNas for any VR needs.</p>
@@ -438,7 +438,7 @@
                 <div class="item-review item-review-3 sixth-sec__item">
                     <div class="item-review__relative">
                         <div aria-expanded="false" tabindex="0" class="item-review__man">
-                            <img loading="lazy" tabindex="0" src="images/client-3.png" alt="" class="item-review__img">
+                            <img loading="lazy" tabindex="0" src="images/client-3.png" alt="client" class="item-review__img">
                         </div>
                         <div class="item-review__desc item-review__desc-hidden">
                             <p tabindex="0" class="item-review__text desc-4">The team was professional, responsive, and a pleasure to work with. We highly recommend VRNas for any VR needs.</p>
@@ -450,7 +450,7 @@
                 <div class="item-review item-review-4 sixth-sec__item">
                     <div class="item-review__relative">
                         <div aria-expanded="false" tabindex="0" class="item-review__man">
-                            <img loading="lazy" tabindex="0" src="images/client-1.png" alt="" class="item-review__img">
+                            <img loading="lazy" tabindex="0" src="images/client-1.png" alt="client" class="item-review__img">
                         </div>
                         <div class="item-review__desc item-review__desc-hidden item-review__desc-hidden-inv item-review__desc_inverted">
                             <p tabindex="0" class="item-review__text desc-4 item-review__text_inverted">The team was professional, responsive, and a pleasure to work with. We highly recommend VRNas for any VR needs.</p>
@@ -462,7 +462,7 @@
                 <div class="item-review item-review-5 sixth-sec__item">
                     <div class="item-review__relative">
                         <div aria-expanded="false" tabindex="0" class="item-review__man">
-                            <img loading="lazy" tabindex="0" src="images/client-2.png" alt="" class="item-review__img">
+                            <img loading="lazy" tabindex="0" src="images/client-2.png" alt="client" class="item-review__img">
                         </div>
                         <div class="item-review__desc item-review__desc-hidden item-review__desc-hidden-inv item-review__desc_inverted">
                             <p tabindex="0" class="item-review__text desc-4 item-review__text_inverted">The team was professional, responsive, and a pleasure to work with. We highly recommend VRNas for any VR needs.</p>
@@ -474,7 +474,7 @@
                 <div class="item-review item-review-6 sixth-sec__item">
                     <div class="item-review__relative">
                         <div aria-expanded="false" tabindex="0" class="item-review__man">
-                            <img loading="lazy" tabindex="0" src="images/client-3.png" alt="" class="item-review__img">
+                            <img loading="lazy" tabindex="0" src="images/client-3.png" alt="client" class="item-review__img">
                         </div>
                         <div class="item-review__desc item-review__desc-hidden">
                             <p tabindex="0" class="item-review__text desc-4">The team was professional, responsive, and a pleasure to work with. We highly recommend VRNas for any VR needs.</p>
@@ -555,25 +555,25 @@
                 </picture>
                
                 <div class="bubble bubble-1">
-                    <img loading="lazy" tabindex="0" src="icons/company.svg" alt="" class="bubble__logo">
+                    <img loading="lazy" tabindex="0" src="icons/company.svg" alt="partner" class="bubble__logo">
                 </div>
                 <div class="bubble bubble-2">
-                    <img loading="lazy" tabindex="0" src="icons/company.svg" alt="" class="bubble__logo">
+                    <img loading="lazy" tabindex="0" src="icons/company.svg" alt="partner" class="bubble__logo">
                 </div>
                 <div class="bubble bubble-3">
-                    <img loading="lazy" tabindex="0" src="icons/company.svg" alt="" class="bubble__logo">
+                    <img loading="lazy" tabindex="0" src="icons/company.svg" alt="partner" class="bubble__logo">
                 </div>
                 <div class="bubble bubble-4">
-                    <img loading="lazy" tabindex="0" src="icons/company.svg" alt="" class="bubble__logo">
+                    <img loading="lazy" tabindex="0" src="icons/company.svg" alt="partner" class="bubble__logo">
                 </div>
                 <div class="bubble bubble-5">
-                    <img loading="lazy" tabindex="0" src="icons/company.svg" alt="" class="bubble__logo">
+                    <img loading="lazy" tabindex="0" src="icons/company.svg" alt="partner" class="bubble__logo">
                 </div>
                 <div class="bubble bubble-6">
-                    <img loading="lazy" tabindex="0" src="icons/company.svg" alt="" class="bubble__logo">
+                    <img loading="lazy" tabindex="0" src="icons/company.svg" alt="partner" class="bubble__logo">
                 </div>
                 <div class="bubble bubble-7">
-                    <img loading="lazy" tabindex="0" src="icons/company.svg" alt="" class="bubble__logo">
+                    <img loading="lazy" tabindex="0" src="icons/company.svg" alt="partner" class="bubble__logo">
                 </div>
             </div>
         </div>
@@ -604,7 +604,7 @@
                                 <div class="swiper-slide articles__slider-item articles__slider-item-width">
                                     <picture>
                                         <source srcset="images/article.webp" type="image/webp" alt="" class="slider__img slider__img-width">
-                                        <img loading="lazy" src="images/article.png" alt="" class="slider__img slider__img-width">
+                                        <img loading="lazy" src="images/article.png" alt="boy playing the VR game while sitting at the desc in front of the computer" class="slider__img slider__img-width">
                                     </picture>
                                    
                                     <div class="articles__slider-desc">
@@ -618,7 +618,7 @@
                                 <div class="swiper-slide articles__slider-item">
                                     <picture>
                                         <source srcset="images/article.webp" type="image/webp" alt="" class="slider__img">
-                                        <img loading="lazy" src="images/article.png" alt="" class="slider__img">
+                                        <img loading="lazy" src="images/article.png" alt="boy playing the VR game while sitting at the desc in front of the computer" class="slider__img">
                                     </picture>
                                    
                                     <div class="articles__slider-desc">
@@ -632,7 +632,7 @@
                                 <div class="swiper-slide articles__slider-item">
                                     <picture>
                                         <source srcset="images/article.webp" type="image/webp" alt="" class="slider__img">
-                                        <img loading="lazy" src="images/article.png" alt="" class="slider__img">
+                                        <img loading="lazy" src="images/article.png" alt="boy playing the VR game while sitting at the desc in front of the computer" class="slider__img">
                                     </picture>
                                     <div class="articles__slider-desc">
                                         <div class="articles__slider-tag caption-2">VR Architecture</div>
@@ -645,7 +645,7 @@
                                 <div class="swiper-slide articles__slider-item">
                                     <picture>
                                         <source srcset="images/article.webp" type="image/webp" alt="" class="slider__img">
-                                        <img loading="lazy" src="images/article.png" alt="" class="slider__img">
+                                        <img loading="lazy" src="images/article.png" alt="boy playing the VR game while sitting at the desc in front of the computer" class="slider__img">
                                     </picture>
                                     <div class="articles__slider-desc">
                                         <div class="articles__slider-tag caption-2">VR Events</div>
@@ -668,7 +668,7 @@
                         <div class="articles__recent-item">
                             <picture tabindex="0" class="articles__recent-img">
                                 <source srcset="images/recent-1.webp" type="image/webp" alt="">
-                                <img loading="lazy" src="images/recent-1.png" alt="" >
+                                <img loading="lazy" src="images/recent-1.png" alt="man is wearing Vr mask" >
                             </picture>
                            
                             <div class="articles__recent-desc">
@@ -682,7 +682,7 @@
                         <div class="articles__recent-item">
                             <picture tabindex="0" class="articles__recent-img">
                                 <source srcset="images/recent-2.webp" type="image/webp" alt="">
-                                <img loading="lazy" src="images/recent-2.png" alt="">
+                                <img loading="lazy" src="images/recent-2.png" alt="hand reaching for the VR device">
                             </picture>
                            
                             <div class="articles__recent-desc">
@@ -696,7 +696,7 @@
                         <div class="articles__recent-item">
                             <picture tabindex="0" class="articles__recent-img"> 
                                 <source srcset="images/recent-3.webp" type="image/webp" alt="" >
-                                <img loading="lazy" src="images/recent-3.png" alt="">
+                                <img loading="lazy" src="images/recent-3.png" alt="VR mask is on the table">
                             </picture>
                             <div class="articles__recent-desc">
                                 <div tabindex="0" class="articles__recent-tag caption-2">VR Entertainment</div>
@@ -709,7 +709,7 @@
                         <div class="articles__recent-item">
                             <picture tabindex="0" class="articles__recent-img">
                                 <source srcset="images/recent-1.webp" type="image/webp" alt="">
-                                <img loading="lazy" src="images/recent-1.png" alt="">
+                                <img loading="lazy" src="images/recent-1.png" alt="man is wearing VR mask">
                             </picture>
                            
                             <div class="articles__recent-desc">
@@ -743,7 +743,7 @@
                 <form method="post" class="subscribe__form">
                     <img loading="lazy" class="subscribe__form-icon" src="icons/Message.svg" alt="">
                     <input name="email-1" required data-validate-field="email" type="text" class="subscribe__input desc-3" placeholder="Enter your email address">
-                    <button type="submit" class="subscribe__btn">
+                    <button aria-label="send email" type="submit" class="subscribe__btn">
                         <img loading="lazy" src="icons/Send.svg" alt="">
                     </button>
                 </form>
