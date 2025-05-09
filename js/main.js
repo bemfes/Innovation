@@ -68,10 +68,12 @@ const navPage = document.querySelector('.nav__item-menu_page')
 const navSecondPage = navPage.querySelector('.nav__list-second')
 const navLinkPage = document.querySelector('.nav__item-link-page');
 
-navService.addEventListener('keydown', (e) => {
+navLinkService.addEventListener('keydown', (e) => {
+  console.log(23);
   if (e.key === 'Enter') {
+    console.log(33);
     if (!spanFirst.classList.contains('hmg-span-opened-1')) {
-      navSecondService.classList.toggle('nav__list-second_opened')
+      navSecondService.classList.add('nav__list-second_opened')
       navSecondPage.classList.remove('nav__list-second_opened') 
       navLinkService.setAttribute('aria-expanded', 'true'); 
     } 
@@ -352,20 +354,7 @@ new window.JustValidate('.subscribe__form', {
   
     },
     submitHandler: function(thisForm) {
-      let formData = new FormData(thisForm);
-  
-      let xhr = new XMLHttpRequest();
-  
-      xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4) {
-          if (xhr.status === 200) {
-            console.log('Отправлено');
-          }
-        }
-      }
-  
-      xhr.open('POST', 'mail.php', true);
-      xhr.send(formData);
+      
   
       thisForm.reset();
       modalSubs.classList.remove('modal_hidden')
@@ -490,21 +479,7 @@ if (formContact) {
     
       },
       submitHandler: function(thisForm) {
-        let formData = new FormData(thisForm);
-    
-        let xhr = new XMLHttpRequest();
-    
-        xhr.onreadystatechange = function () {
-          if (xhr.readyState === 4) {
-            if (xhr.status === 200) {
-              console.log('Отправлено');
-            }
-          }
-        }
-    
-        xhr.open('POST', 'mail.php', true);
-        xhr.send(formData);
-    
+      
         thisForm.reset();
         modalContacts.classList.remove('modal_hidden')
         overlayContacts.classList.remove('overlay_hidden')
