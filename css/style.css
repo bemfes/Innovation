@@ -2621,9 +2621,9 @@ a[href^="tel"] {
 }
 
 .service__btn_focus {
-    bottom: 34px;
-    visibility: visible;
-    opacity: 1;
+    bottom: 34px !important;
+    visibility: visible !important;
+    opacity: 1 !important;
     transition: all 0.3s;
 }
 
