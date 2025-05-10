@@ -61,58 +61,29 @@ navItemMenuClose.forEach(item => {
 })
 
 // Нажатие на service и page в меню
-const navService = document.querySelector('.nav__item-menu_service')
-const navSecondService = navService.querySelector('.nav__list-second')
+
+const navSecondService = document.querySelector('.nav__list-second_service')
 const navLinkService = document.querySelector('.nav__item-link-service');
-const navPage = document.querySelector('.nav__item-menu_page')
-const navSecondPage = navPage.querySelector('.nav__list-second')
+const navSecondPage = document.querySelector('.nav__list-second_page')
 const navLinkPage = document.querySelector('.nav__item-link-page');
-
-navLinkService.addEventListener('keydown', (e) => {
-  console.log(23);
-  if (e.key === 'Enter') {
-    console.log(33);
-    if (!spanFirst.classList.contains('hmg-span-opened-1')) {
-      navSecondService.classList.add('nav__list-second_opened')
-      navSecondPage.classList.remove('nav__list-second_opened') 
-      navLinkService.setAttribute('aria-expanded', 'true'); 
-    } 
-  }
+const navLinkBlog = document.querySelector('.nav__item-link-blog');
+const navLinkUs = document.querySelector('.nav__item-link-us');
+navLinkService.addEventListener('focusin', () => {
+  navSecondService.classList.add('nav__list-second_opened')
+  navSecondPage.classList.remove('nav__list-second_opened') 
+})
+navLinkPage.addEventListener('focusin', () => {
+  navSecondService.classList.remove('nav__list-second_opened')
+  navSecondPage.classList.add('nav__list-second_opened') 
+})
+navLinkBlog.addEventListener('focusin', () => {
+  navSecondPage.classList.remove('nav__list-second_opened') 
+})
+navLinkUs.addEventListener('focusin', () => {
+  navSecondService.classList.remove('nav__list-second_opened') 
 })
 
-if (document.querySelector('.nav__item-link-us')) {
-  document.querySelector('.nav__item-link-us').addEventListener('focusin', () => {
-      navSecondService.classList.remove('nav__list-second_opened')
-      navLinkService.setAttribute('aria-expanded', 'false');  
-  })  
-}
 
-navPage.addEventListener('focusin', () => {
-    navSecondService.classList.remove('nav__list-second_opened')
-    navLinkService.setAttribute('aria-expanded', 'false');      
-})  
-
-navService.addEventListener('focusin', () => {
-    navSecondPage.classList.remove('nav__list-second_opened')
-    navLinkPage.setAttribute('aria-expanded', 'false');      
-})  
-if (document.querySelector('.nav__item-link-blog')) {
-
-  document.querySelector('.nav__item-link-blog').addEventListener('focusin', () => {
-      navSecondPage.classList.remove('nav__list-second_opened')
-      navLinkPage.setAttribute('aria-expanded', 'false');      
-  })  
-}
-
-navPage.addEventListener('keydown', (e) => {
-  if (e.key === 'Enter') {
-    if (!spanFirst.classList.contains('hmg-span-opened-1')) {
-      navSecondPage.classList.toggle('nav__list-second_opened')
-      navSecondService.classList.remove('nav__list-second_opened')
-      navLinkPage.setAttribute('aria-expanded', 'true');
-    } 
-  }
-})
 
 // Социальные сети членов команды
 
