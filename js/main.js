@@ -146,71 +146,41 @@ if (teamParent) {
   
 }
 
-const serviceItemsFocus = document.querySelectorAll('.service__item');
-const helper = document.querySelectorAll('.helper__service-link')
 
-if (serviceItemsFocus) {
-  serviceItemsFocus.forEach(item => {
-    const link = item.querySelector('.service__btn')
-    const desc = item.querySelector('.service__desc')
-    const helper = item.querySelector('.helper__service-link')
-    const title = item.querySelector('.service__title')
-    title.addEventListener('focusin', () => {
-      if (!desc.classList.contains('service__desc-on')) {
-        desc.classList.add('service__desc-on')
-      }
-    })
-    desc.addEventListener('focusout', () => {
-      if (desc.classList.contains('service__desc-on')) {
-        item.classList.add('service__item_focus')
-        link.classList.add('service__btn_focus')
-
-      }
-    })
-    link.addEventListener('focusout', () => {
-      item.classList.remove('service__item_focus')
-      link.classList.remove('service__btn_focus')
-      desc.classList.remove('service__desc-on')
-    })
-    
-    if (item.nextElementSibling) {
+const serviceItem = document.querySelectorAll('.service__item');
+serviceItem.forEach(item => {
+  const serviceBtn = item.querySelector('.service__btn')
+  item.addEventListener('focusin', () => {
+    item.classList.add('service__item_focus')
+    serviceBtn.classList.add('service__btn_focus')
+  })
+  if (item.nextElementSibling) {
       item.nextElementSibling.addEventListener('focusin', () => {
         item.classList.remove('service__item_focus')
-        link.classList.remove('service__btn_focus')
-        helper.classList.add('helper__service-link-on')
-        
-      })
+        serviceBtn.classList.remove('service__btn_focus') 
+    })
     }
     if (item.previousElementSibling) {
       item.previousElementSibling.addEventListener('focusin', () => {
         item.classList.remove('service__item_focus')
-        link.classList.remove('service__btn_focus')
-        
+        serviceBtn.classList.remove('service__btn_focus')  
       })
     }
-    
-  })
-}
-if (helper) {
-  helper.forEach(help => {
-    help.addEventListener('focusin', () => {
-      if (help.classList.contains('helper__service-link-on')) {
-        help.previousElementSibling.classList.add('service__btn_focus')
-        help.parentElement.classList.add('service__item_focus')
-      }
-    })
+})
+const serviceItemFirst = document.querySelector('.service__box').firstElementChild
+serviceItemFirst.addEventListener('focusout', () => {
+  const serviceBtn = serviceItemFirst.querySelector('.service__btn')
+  serviceItemFirst.classList.remove('service__item_focus')
+  serviceBtn.classList.remove('service__btn_focus') 
+})
+const serviceItemLast = document.querySelector('.service__box').lastElementChild
+serviceItemLast.addEventListener('focusout', () => {
+  const serviceBtn = serviceItemLast.querySelector('.service__btn')
+  serviceItemLast.classList.remove('service__item_focus')
+  serviceBtn.classList.remove('service__btn_focus') 
+})
 
-  })
-}
-const serviceParent = document.querySelector('.service__box');
-if (serviceParent) {
-  const lastChild = serviceParent.lastElementChild
-  const helper = lastChild.querySelector('.helper__service-link')
-  helper.addEventListener('focusin', () => {
-      helper.classList.add('helper__service-link-on')
-  })
-  
-}
+
 
 // Всплытие секций
 
